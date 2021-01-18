@@ -335,7 +335,7 @@ aside .products .figure .figcaption .stars{
      }
      
      
-.locations_destock{
+.locations_desktop{
           display: flex;
           justify-content: space-between;   
 }
@@ -352,25 +352,25 @@ aside .products .figure .figcaption .stars{
           justify-content: space-between
 }
 
-.locations_destock .figure_1{
+.locations_desktop .figure_1{
           border-radius: 20px;
           box-shadow: 0 0 20px #0000002e;}
-.locations_destock .figure_2{
+.locations_desktop .figure_2{
           border-radius: 20px;
           box-shadow: 0 0 20px #0000002e;}
-.locations_destock .figure_3{
+.locations_desktop .figure_3{
           border-radius: 20px;
           box-shadow: 0 0 20px #0000002e;}
-.locations_destock .figure_4{
+.locations_desktop .figure_4{
           border-radius: 20px;
           box-shadow: 0 0 20px #0000002e;}
 
-.locations_destock .figcaption p{
+.locations_desktop .figcaption p{
           margin-left: 20px;
           padding-bottom: 15px;
 }
           /*figure_1*/
-.locations_destock .figure_1 .pictures img{
+.locations_desktop .figure_1 .pictures img{
                     width: 320px;
                     height: 380px;
                     object-fit: cover;
@@ -378,21 +378,21 @@ aside .products .figure .figcaption .stars{
                     
 }
           /*figure_2*/      
-.locations_destock .figure_2 .pictures img{
+.locations_desktop .figure_2 .pictures img{
                     width: 320px;
                     height: 175px;
                     object-fit: cover;
                     border-radius: 20px 20px 0px 0px;
 }
           /*figure_3*/
-.locations_destock .figure_3 .pictures img{
+.locations_desktop .figure_3 .pictures img{
                     width: 320px;
                     height: 105px;
                     object-fit: cover;
                     border-radius: 20px 20px 0px 0px;
 }
           /*figure_4*/
-.locations_destock .figure_4 .pictures img{
+.locations_desktop .figure_4 .pictures img{
                     width: 320px;
                     height: 135px;
                     object-fit: cover;

@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 body {
-              font-family: "Raleway";
+   font-family: "Raleway";
 }
 
 .links{
-              text-decoration: none;
-              color: black;
+   text-decoration: none;
+   color: black;
 }
 
 .fa-star {
@@ -18,8 +18,8 @@ body {
 }
 
 h1{
-              margin-left: 7px;
-              font-size: 18px;
+   margin-left: 7px;
+   font-size: 18px;
 }
 
 
@@ -27,124 +27,169 @@ h1{
 /*HEADER*/
 
 header{
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-             
+   margin-left: -48px;
+   margin-top: -43px;
+   margin-right: -8px;
+   margin-bottom: -40px;
 }
+             
 
-header .logo img{
-              width: 97px;
-              height: 45px;
+nav img{
+   width: 97px;
+   height: 45px;
 }
 
 
 
 header nav ul{
-              
-              flex-direction: row-reverse;
-              list-style: none;
-              text-align: center;
+   display: flex;         
+   list-style: none;
+   text-align: center;
+   flex-wrap: wrap;
 }
 
-header nav li{
-              display: inline;
-              padding-left: 30px;
-              padding-right: 30px;
 
+header nav ul li:first-child{
+   text-align: center;
+   order: 1;
+   width: 47%;
+   text-align: left;
+   padding-left: 10px;
+}
+header nav ul li:nth-child(2){
+  
+   order: 2;
+   width: 50%;
+   padding-top: 25px;
+   border-bottom: 3px solid #ddd;
+}
+
+header nav ul li:nth-child(2):hover{
+   border-bottom: 3px solid #1e90ff;
+}
+
+header nav ul li:nth-child(3){
+   
+   order: 3;
+   width: 50%;
+   padding-top: 25px;
+   border-bottom: 3px solid #ddd;
+}
+
+header nav ul li:nth-child(3):hover{
+   border-bottom: 3px solid #1e90ff;
+}
+
+header nav ul li:last-child{
+  
+   order: 1;
+   width: 50%;
+   padding-top: 10px;
+   text-align: center;
+
+}
+
+header .links{
+   color: #1e90ff;
+   font-weight: bold;
+}
+
+header li:last-child .links {
+   color: black;
+   font-weight: bold;
 }
 
 /*SEARCH*/
 
 #search .title h1{
-              font-size: 20px;
+   font-size: 20px;
 }
 
 #search .title p{
-              font-size: 14px;
+   font-size: 14px;
 }
 
 #search .form{
-              display: flex;
-              flex-direction: row;
-              justify-content: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
 }
 
 #search .form .maps{
-              background-color:#f2f2f2;
-              padding: 15px;
-              border-radius: 15px 0px 0px 15px;
+   background-color:#f2f2f2;
+   padding: 15px;
+   border-radius: 15px 0px 0px 15px;
 }
 
 #search .form .bar{
-              width: 64%;
-              border-top: #F2F2F2 1px solid;
-              border-bottom: #F2F2F2 1px solid;
-              border-left: none;
-              border-right: none;
+   width: 64%;
+   border-top: #F2F2F2 1px solid;
+   border-bottom: #F2F2F2 1px solid;
+   border-left: none;
+   border-right: none;
 }
 
 #search .form .btn{
-              background-color: #0065fc;
-              color: #ffffff;
-              text-align: center;
-              padding: 15px;
-              width: 20px;
-              border-radius: 0px 15px 15px 0px;
+   background-color: #0065fc;
+   color: #ffffff;
+   text-align: center;
+   padding: 15px;
+   width: 20px;
+   border-radius: 0px 15px 15px 0px;
 }
 
 #search .search{
-              display: none;
+   display: none;
 }
 
 #search .filter{
-              display: flex;
-              margin-top: 10px;
-              flex-direction: column;
+   display: flex;
+   margin-top: 10px;
+   flex-direction: column;
 }
 
 #search .filter .filter-btn{
-              display: flex;
-              flex-direction: row;
-              flex-wrap: wrap;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
 }
 
 #search .filter .filter_1{
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              border-top: 2px solid #d9d9d9;
-              border-right: 2px solid #d9d9d9;
-              border-bottom: 2px solid #d9d9d9;
-              border-radius: 50px;
-              height: 35px;
-              margin-right: 2px;
-              margin-top: 2px;  
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   border-top: 2px solid #d9d9d9;
+   border-right: 2px solid #d9d9d9;
+   border-bottom: 2px solid #d9d9d9;
+   border-radius: 50px;
+   height: 35px;
+   margin-right: 2px;
+   margin-top: 2px;  
 }
 
 
       
 #search .filter .filter_1 .icone{
-              color: #0065fc;
-              background-color:#deebff;
-              padding: 10px;
-              margin-right: 10px;
-              border-radius: 50px;
+   color: #0065fc;
+   background-color:#deebff;
+   padding: 10px;
+   margin-right: 10px;
+   border-radius: 50px;
 }
       
 #search .filter .filter_1 .description{
-              padding-right: 15px;
-              font-weight: bold;
+   padding-right: 15px;
+   font-weight: bold;
 }
 
 .info{
-              display: flex;
-              flex-direction: row;
+   display: flex;
+   flex-direction: row;
 }
       
 .info .fas{
-              margin-right: 15px;
-              color: #0065fc;
+   margin-right: 15px;
+   color: #0065fc;
 }
       
 
@@ -152,107 +197,107 @@ header nav li{
 /*ACCOMODATION*/
 
 #accomodation{
-              display: flex;
-              flex-direction: column-reverse;
+   display: flex;
+   flex-direction: column-reverse;
 }
 aside{
-     background-color: #f2f2f2;         
+   background-color: #f2f2f2;         
 }
 
 aside h1 i{
-              margin-left: 100px;
+   margin-left: 100px;
 }
 
 aside .figure{
-              display: flex;
-              align-items: center;
-              background-color: #ffffff;
-              margin-bottom: 5%;
-              border-radius: 20px;
-              margin-left: 2%;
-              margin-right: 2%;
+   display: flex;
+   align-items: center;
+   background-color: #ffffff;
+   margin-bottom: 5%;
+   border-radius: 20px;
+   margin-left: 2%;
+   margin-right: 2%;
 }
 
 aside .products .figure .miniature img{
               
-              display: flex;
-              align-items: center;
+   display: flex;
+   align-items: center;
 }
 
 aside .products .figure .miniature img{
               
-              height: 120px;
-              width: 100px;
-              border-radius: 20px 0px 0px 20px;
-              object-fit: cover;
-              padding: 2px;
+   height: 120px;
+   width: 100px;
+   border-radius: 20px 0px 0px 20px;
+   object-fit: cover;
+   padding: 2px;
 }
 
 
 aside .products .figure .figcaption h3{
-              margin-top: -5px;
-              margin-right: 25px;
-              margin-left: 5px;
-              font-size: 16px
+   margin-top: -5px;
+   margin-right: 25px;
+   margin-left: 5px;
+   font-size: 16px
 }
 
 aside .products .figure .figcaption p{
-              margin-top: -10px;
-              margin-right: 25px;
-              margin-left: 5px;
-              font-size: 14px;
+   margin-top: -10px;
+   margin-right: 25px;
+   margin-left: 5px;
+   font-size: 14px;
 }
 
 aside .products .figure .figcaption .stars{
-              margin-top: 30px;
-              margin-right: 45px;
-              margin-left: 6px;
-              font-size: 14px;
+   margin-top: 30px;
+   margin-right: 45px;
+   margin-left: 6px;
+   font-size: 14px;
 }
 
 #accomodation .product_sheet .products .figure{
-              margin-bottom: 10px;
-              border-radius: 20px;
-              box-shadow: 0 0 20px #0000002e;
+   margin-bottom: 10px;
+   border-radius: 20px;
+   box-shadow: 0 0 20px #0000002e;
 
 }
 
 #accomodation .product_sheet .products .figure .miniature{
-              display: flex;
-              justify-content: center;
-              padding: 2px;
+   display: flex;
+   justify-content: center;
+   padding: 2px;
 }
 
 #accomodation .product_sheet .products .figure .miniature img{
-              height: 100px;
-              width: 100%;
-              border-radius: 20px 20px 0px 0px;
-              object-fit: cover;
+   height: 100px;
+   width: 100%;
+   border-radius: 20px 20px 0px 0px;
+   object-fit: cover;
                
 }
 
 #accomodation .product_sheet .products .figure .figcaption{
-              padding-left: 10px;          
+   padding-left: 10px;          
 }
 
 #accomodation .product_sheet .products .figcaption .description h3{
-              margin-top: 0px;
-              margin-right: 25px;
-              margin-left: 5px;
-              font-size: 16px
+   margin-top: 0px;
+   margin-right: 25px;
+   margin-left: 5px;
+   font-size: 16px
 }
 
 #accomodation .product_sheet .products .figcaption .description p{
-              margin-top: -15px;
-              margin-right: 25px;
-              margin-left: 5px;
-              font-size: 16px;
-              margin-bottom: 3px;
+   margin-top: -15px;
+   margin-right: 25px;
+   margin-left: 5px;
+   font-size: 16px;
+   margin-bottom: 3px;
 }
 
 #accomodation .product_sheet .products .figcaption .stars{
-              margin-top: 0px;
-              margin-left: 5px;
+   margin-top: 0px;
+   margin-left: 5px;
 }
 
 
@@ -260,49 +305,49 @@ aside .products .figure .figcaption .stars{
 /*ACTIVITY*/
 
 #activity .figure_1, .figure_2, .figure_3, .figure_4{
-              margin-bottom: 10px;
-              border-radius: 20px;
-              box-shadow: 1px 1px 1px black;
-              box-shadow: 0 0 20px #0000002e;
+   margin-bottom: 10px;
+   border-radius: 20px;
+   box-shadow: 1px 1px 1px black;
+   box-shadow: 0 0 20px #0000002e;
 
 }
 
 #activity .pictures{
-              display: flex;
-              justify-content: center;
+   display: flex;
+   justify-content: center;
               
 }
 
 #activity img{
-              height: 100px;
-              width: 100%;
-              border-radius: 20px 20px 0px 0px;
-              object-fit: cover;
+   height: 100px;
+   width: 100%;
+   border-radius: 20px 20px 0px 0px;
+   object-fit: cover;
                
 }
 
 #activity .figcaption{
-              padding-left: 10px;
-              display: flex;
-              align-items: center;
+   padding-left: 10px;
+   display: flex;
+   align-items: center;
                
 }
 
 
 /*FOOTER*/
 footer{
-              background-color: #f2f2f2;
+   background-color: #f2f2f2;
 }
       
 footer .list{
-              padding-top: 10px;
-              padding-bottom: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
 }
 
 li{
-              list-style: none;
+   list-style: none;
 }
       
 ul{
-           line-height: 30px;   
+   line-height: 30px;   
 }

@@ -31,18 +31,21 @@ h1{
 /*HEADER*/
 
 header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-             
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+              
 }
-
-nav img{
-     width: 97px;
-     height: 45px;
-  }
-
+ 
+ header .logo img{
+      width: 97px;
+      height: 45px;
+   }
+ 
+ nav img{
+  display: none;
+}
 
 
 header nav ul{
@@ -272,8 +275,11 @@ aside{
      border-radius: 3%;        
 }
 
-aside h1 i{
-     margin-left: 170px;
+aside span{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
 }
 
 aside .products .links{

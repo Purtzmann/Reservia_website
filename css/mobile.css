@@ -32,6 +32,10 @@ header{
    margin-right: -8px;
    margin-bottom: -40px;
 }
+
+header .logo{
+   display: none;
+}
              
 
 nav img{
@@ -53,7 +57,7 @@ header nav ul li:first-child{
    text-align: center;
    order: 1;
    width: 47%;
-   text-align: left;
+   text-align: center;
    padding-left: 10px;
 }
 header nav ul li:nth-child(2){

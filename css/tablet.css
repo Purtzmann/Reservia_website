@@ -34,9 +34,13 @@ header{
              
 }
 
-nav img{
+header .logo img{
      width: 97px;
      height: 45px;
+  }
+
+nav img{
+ display: none;
   }
 
 

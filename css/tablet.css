@@ -29,7 +29,7 @@ h1{
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
              
 }
@@ -41,7 +41,7 @@ header .logo img{
 
 nav img{
  display: none;
-  }
+}
 
 
 
@@ -60,12 +60,21 @@ header nav li{
 }
 
 /*SEARCH*/
-
-
-#search .title p{
-     font-size: 17px;
-     margin-left: 20px;
+#search .titre{
+     margin-top: 30px;
+     margin-left: 10px;
 }
+  
+#search .titre h1{
+     font-size: 20px;
+     margin-left: 0px; 
+}
+  
+#search .title p{
+     font-size: 14px;
+}
+
+
 
 #search .form{
      display: flex;
@@ -87,6 +96,14 @@ header nav li{
      border-left: none;
      border-right: none;
 }
+
+#lieu::placeholder{
+     color: black;
+     font-weight: 600;
+     font-size: 15px;
+     font-family: 'Raleway';
+}
+
 
 #search .form .btn{
      background-color: #0065fc;
@@ -126,19 +143,26 @@ header nav li{
      border-right: 2px solid #d9d9d9;
      border-bottom: 2px solid #d9d9d9;
      border-radius: 50px;
-     height: 35px;
-     margin-right: 20px;
-     margin-top: 2px;  
-}
-
-
-      
-#search .filter .filter_1 .icone{
-     color: #0065fc;
-     background-color:#deebff;
-     padding: 10px;
+     height: 41px;
      margin-right: 10px;
-     border-radius: 50px;
+     margin-top: 10px; 
+}
+  
+  
+        
+  #search .filter .filter_1 .icone{
+     padding: 11px;
+     border-radius: 100px;
+     margin-right: 10px;
+     color: #0065fc;
+     background-color: #deebff;
+     margin-left: -2px;
+     margin-top: -2px;
+     margin-bottom: -2px;
+     border: 1px solid #deebff;
+     width: 18px;
+     text-align: center;
+     cursor: pointer;
 }
       
 #search .filter .filter_1 .description{
@@ -168,8 +192,18 @@ aside{
      background-color: #f2f2f2;         
 }
 
-aside h1 i{
-     margin-left: 455px;
+aside span{
+display: flex;
+    align-items: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-right: 16px;
+    margin-top: 10px;
+}
+
+aside span .fas{
+     font-size: 25px;
+     margin-right: 25px;
 }
 
 aside .figure{
@@ -242,11 +276,10 @@ aside .products .figure .figcaption .stars{
 
 #accomodation .product_sheet .products .figure .miniature img{
      height: 130px;
-     width: 100%;
+     width: 99%;
      border-radius: 20px 20px 0px 0px;
      object-fit: cover;
-     padding: 2px;
-               
+     padding: 2px;       
 }
 
 #accomodation .product_sheet .products .figure .figcaption{
@@ -272,6 +305,13 @@ aside .products .figure .figcaption .stars{
      margin-top: 0px;
      margin-left: 5px;
 }
+
+.plus{
+     margin-left: 18px;
+     margin-top: 28px;
+     font-weight: 700;
+}
+  
 
 
 

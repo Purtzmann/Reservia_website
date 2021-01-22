@@ -31,13 +31,13 @@
    
    <!-- Section 1 Search -->
 <section id="search">         
-   <div class="title">
+   <div class="titre">
                   <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                   <p>En plein centre ville ou en pleine nature</p>
    </div>
    <div class="form">
                   <div class="maps"><i class="fas fa-map-marker-alt"></i></div>
-                  <input type="search"  placeholder="Marseille, France" size="30" class="bar">
+                  <input type="search" id="lieu" placeholder="Marseille, France" size="30" class="bar">
                   <div class="btn"><span class="search">Rechercher</span><i class="fas fa-search"></i></div>
    </div>
 
@@ -194,6 +194,7 @@
                </div>
             </div>
          </a>
+         <p class="plus">Afficher plus</p>
       </div> 
    </div>
 
@@ -269,74 +270,80 @@
 <section id="activity">
    <div class="activty_marseille">
       <h1>Activités à Marseille</h1>
-      <div class="locations_destock">
-                  <div class="location_1">
-                                 <a href="#" class="links">
-                                                <div class="figure_1">
-                                                            <div class="pictures">
-                                                                           <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-                                                            </div>
-                                                            <div class="figcaption">
-                                                                           <p><strong>Vieux Port</strong></p>
-                                                            </div>
-                                                </div>
-                                 </a>
+      <div class="locations_desktop">
+
+         <div class="location_1">
+            <a href="#" class="links">
+               <div class="figure_1">
+                  <div class="pictures">
+                     <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                   </div>
-                  <div class="location_2">
-                                 <a href="#" class="links">
-                                                <div class="figure_2">
-                                                            <div class="pictures">
-                                                                           <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
-                                                            </div>
-                                                            <div class="figcaption">
-                                                                           <p><strong>Fort de Pomègues</strong></p>
-                                                            </div>
-                                                </div>
-                                 </a>
-                                 <a href="#" class="links">
-                                                <div class="figure_3">
-                                                            <div class="pictures">
-                                                                           <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
-                                                            </div>
-                                                            <div class="figcaption">
-                                                                           <p><strong>Iles du Frioul</strong></p>
-                                                            </div>
-                                                </div>
-                                 </a>
-                  </div>              
-                                 <a href="#" class="links">
-                                                <div class="figure_1">
-                                                            <div class="pictures">
-                                                                           <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
-                                                            </div>
-                                                            <div class="figcaption">
-                                                                           <p><strong>Parc National des Calanques</strong></p>
-                                                            </div>
-                                                </div>
-                                 </a>
-                  <div class="location_4">
-                                 <a href="#" class="links">
-                                                <div class="figure_4">
-                                                            <div class="pictures">
-                                                                           <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
-                                                            </div>
-                                                            <div class="figcaption">
-                                                                           <p><strong>Notre-Dame-de-la-Garde</strong></p>
-                                                            </div>
-                                                </div>
-                                 </a>  
-                                 <a href="#" class="links">
-                                                <div class="figure_4">
-                                                            <div class="pictures">
-                                                                           <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
-                                                            </div>
-                                                            <div class="figcaption">
-                                                                           <p><strong>Parc Longchamp</strong></p>
-                                                            </div>
-                                                </div>
-                                 </a>
-                  </div>              
+                  <div class="figcaption">
+                     <p><strong>Vieux Port</strong></p>
+                  </div>
+               </div>
+            </a>
+         </div>
+
+         <div class="location_2">
+            <a href="#" class="links">
+               <div class="figure_2">
+                  <div class="pictures">
+                     <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                  </div>
+                  <div class="figcaption">
+                     <p><strong>Fort de Pomègues</strong></p>
+                  </div>
+               </div>
+            </a>
+            <a href="#" class="links">
+               <div class="figure_3">
+                  <div class="pictures">
+                     <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                  </div>
+                  <div class="figcaption">
+                     <p><strong>Iles du Frioul</strong></p>
+                  </div>
+               </div>
+            </a>
+         </div>
+         <div class="location_1">
+            <a href="#" class="links">
+               <div class="figure_1">
+                  <div class="pictures">
+                     <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                  </div>
+                  <div class="figcaption">
+                     <p><strong>Parc National des Calanques</strong></p>
+                  </div>
+               </div>
+            </a>
+         </div>
+         <div class="location_4">
+            <a href="#" class="links">
+               <div class="figure_4">
+                  <div class="pictures">
+                     <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                  </div>
+                  <div class="figcaption">
+                     <p><strong>Notre-Dame-de-la-Garde</strong></p>
+                  </div>
+               </div>
+            </a>  
+            <a href="#" class="links">
+               <div class="figure_5">
+                  <div class="pictures">
+                     <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                  </div>
+                  <div class="figcaption">
+                     <p><strong>Parc Longchamp</strong></p>
+                  </div>
+               </div>
+            </a>
+         </div> 
+
       </div>
+
       <div class="locations_mobile">
                   <div class="location">
                                  <a href="#" class="links">

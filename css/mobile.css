@@ -57,7 +57,7 @@ header nav ul li:first-child{
    text-align: center;
    order: 1;
    width: 47%;
-   text-align: center;
+   text-align: left;
    padding-left: 10px;
 }
 header nav ul li:nth-child(2){
@@ -70,10 +70,10 @@ header nav ul li:nth-child(2){
 
 header nav ul li:nth-child(2):hover{
    border-bottom: 3px solid #1e90ff;
+   color: #1e90ff;
 }
 
 header nav ul li:nth-child(3){
-   
    order: 3;
    width: 50%;
    padding-top: 25px;
@@ -82,31 +82,37 @@ header nav ul li:nth-child(3){
 
 header nav ul li:nth-child(3):hover{
    border-bottom: 3px solid #1e90ff;
+   color: #1e90ff;
 }
 
 header nav ul li:last-child{
-  
    order: 1;
-   width: 50%;
+   width: 45%;
    padding-top: 10px;
-   text-align: center;
-
+   padding-right: 0px;
+   text-align: right;
+   margin-right: 5px;
 }
 
 header .links{
-   color: #1e90ff;
-   font-weight: bold;
+   color: black;
 }
 
 header li:last-child .links {
    color: black;
-   font-weight: bold;
 }
 
 /*SEARCH*/
 
-#search .title h1{
+#search .titre{
+   margin-top: 30px;
+   margin-left: 10px;
+}
+
+#search .titre h1{
    font-size: 20px;
+   margin-left: 0px;
+   
 }
 
 #search .title p{
@@ -123,14 +129,23 @@ header li:last-child .links {
    background-color:#f2f2f2;
    padding: 15px;
    border-radius: 15px 0px 0px 15px;
+   padding-right: 20px;
+   padding-left: 20px;
 }
 
 #search .form .bar{
-   width: 64%;
+   width: 70%;
    border-top: #F2F2F2 1px solid;
    border-bottom: #F2F2F2 1px solid;
    border-left: none;
    border-right: none;
+}
+
+#lieu::placeholder{
+   color: black;
+   font-weight: 600;
+   font-size: 15px;
+   font-family: 'Raleway';
 }
 
 #search .form .btn{
@@ -139,7 +154,9 @@ header li:last-child .links {
    text-align: center;
    padding: 15px;
    width: 20px;
-   border-radius: 0px 15px 15px 0px;
+   border-radius: 15px 15px 15px 15px;
+   position: absolute;
+   right: 7%;
 }
 
 #search .search{
@@ -150,6 +167,7 @@ header li:last-child .links {
    display: flex;
    margin-top: 10px;
    flex-direction: column;
+   margin-left: 15px;
 }
 
 #search .filter .filter-btn{
@@ -166,29 +184,37 @@ header li:last-child .links {
    border-right: 2px solid #d9d9d9;
    border-bottom: 2px solid #d9d9d9;
    border-radius: 50px;
-   height: 35px;
-   margin-right: 2px;
-   margin-top: 2px;  
+   height: 41px;
+   margin-right: 10px;
+   margin-top: 10px; 
 }
 
 
       
 #search .filter .filter_1 .icone{
-   color: #0065fc;
-   background-color:#deebff;
-   padding: 10px;
+   padding: 11px;
+   border-radius: 100px;
    margin-right: 10px;
-   border-radius: 50px;
+   color: #0065fc;
+   background-color: #deebff;
+   margin-left: -2px;
+   margin-top: -2px;
+   margin-bottom: -2px;
+   border: 1px solid #deebff;
+   width: 18px;
+   text-align: center;
+   cursor: pointer;
 }
       
 #search .filter .filter_1 .description{
-   padding-right: 15px;
+   padding-right: 13px;
    font-weight: bold;
 }
 
 .info{
    display: flex;
    flex-direction: row;
+   margin-left: 15px;
 }
       
 .info .fas{
@@ -205,11 +231,23 @@ header li:last-child .links {
    flex-direction: column-reverse;
 }
 aside{
-   background-color: #f2f2f2;         
+   background-color: #f2f2f2;
+   padding-bottom: 15px;
+   margin-left: -8px;
+   margin-right: -8px;      
 }
 
-aside h1 i{
-   margin-left: 100px;
+aside span{
+   display: flex;
+   align-items: row;
+   align-items: baseline;
+   justify-content: space-between;
+   margin-right: 16px;
+   margin-top: 10px;
+}
+
+aside span .fas{
+   font-size: 20px;
 }
 
 aside .figure{
@@ -218,8 +256,8 @@ aside .figure{
    background-color: #ffffff;
    margin-bottom: 5%;
    border-radius: 20px;
-   margin-left: 2%;
-   margin-right: 2%;
+   margin-left: 5%;
+   margin-right: 5%;
 }
 
 aside .products .figure .miniature img{
@@ -231,10 +269,10 @@ aside .products .figure .miniature img{
 aside .products .figure .miniature img{
               
    height: 120px;
-   width: 100px;
+   width: 120px;
    border-radius: 20px 0px 0px 20px;
    object-fit: cover;
-   padding: 2px;
+   padding: 4px;
 }
 
 
@@ -259,10 +297,16 @@ aside .products .figure .figcaption .stars{
    font-size: 14px;
 }
 
+#accomodation .product_sheet h1{
+   margin-top: 30px;
+}
+
 #accomodation .product_sheet .products .figure{
-   margin-bottom: 10px;
+   margin-bottom: 15px;
    border-radius: 20px;
    box-shadow: 0 0 20px #0000002e;
+   margin-left: 15px;
+   margin-right: 15px;
 
 }
 
@@ -281,14 +325,15 @@ aside .products .figure .figcaption .stars{
 }
 
 #accomodation .product_sheet .products .figure .figcaption{
-   padding-left: 10px;          
+   padding: 10px;          
 }
 
 #accomodation .product_sheet .products .figcaption .description h3{
    margin-top: 0px;
    margin-right: 25px;
    margin-left: 5px;
-   font-size: 16px
+   
+   
 }
 
 #accomodation .product_sheet .products .figcaption .description p{
@@ -305,25 +350,38 @@ aside .products .figure .figcaption .stars{
 }
 
 
+.plus{
+   margin-left: 18px;
+   margin-top: 28px;
+   font-weight: 700;
+}
+
+
 
 /*ACTIVITY*/
 
-#activity .figure_1, .figure_2, .figure_3, .figure_4{
-   margin-bottom: 10px;
+#activity h1{
+   margin-bottom: 25px;
+}
+
+#activity .figure{
+   margin-bottom: 20px;
    border-radius: 20px;
    box-shadow: 1px 1px 1px black;
    box-shadow: 0 0 20px #0000002e;
+   margin-left: 15px;
+   margin-right: 15px;
 
 }
 
 #activity .pictures{
    display: flex;
    justify-content: center;
-              
+   
 }
 
 #activity img{
-   height: 100px;
+   height: 130px;
    width: 100%;
    border-radius: 20px 20px 0px 0px;
    object-fit: cover;
@@ -337,21 +395,29 @@ aside .products .figure .figcaption .stars{
                
 }
 
+.locations_desktop{
+   display: none;
+}
+
 
 /*FOOTER*/
 footer{
    background-color: #f2f2f2;
+   margin-left: -8px;
+   margin-right: -8px;
 }
       
 footer .list{
-   padding-top: 10px;
-   padding-bottom: 10px;
+   padding-top: 5px;
+   padding-bottom: 1px;
 }
 
 li{
    list-style: none;
 }
+}
       
 ul{
-   line-height: 30px;   
+   margin-top: 30px;
+   line-height: 25px;
 }

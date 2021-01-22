@@ -4,7 +4,6 @@ body {
      font-family: "Raleway";
 }
 
-
 .links{
      text-decoration: none;
      color: black;
@@ -44,6 +43,8 @@ nav img{
  display: none;
 }
 
+
+
 header nav ul{
               
      flex-direction: row-reverse;
@@ -58,81 +59,63 @@ header nav li{
 
 }
 
-header nav{
-     list-style-type: none;
-}
-
-header nav li{
-     display: inline;
-     padding-left: 30px;
-     padding-right: 30px;
-
-}
-
-header nav li strong{
-color: #0065fc;
-}
-
-
-header nav ul a:hover{
-border-top: 2px solid #0065fc;
-color: #0065fc;
-}
-
 /*SEARCH*/
-
-#search h1{
-     margin-left:0px;
-     font-size: 25px;
+#search .titre{
+     margin-top: 30px;
+     margin-left: 10px;
 }
-
-
+  
+#search .titre h1{
+     font-size: 20px;
+     margin-left: 0px; 
+}
+  
 #search .title p{
-     font-size: 17px;
+     font-size: 14px;
 }
+
+
 
 #search .form{
      display: flex;
      flex-direction: row;
+     justify-content: center;
      margin-top: 30px;
 }
 
-#search .maps, .btn{
-     padding: 14px;
-     font-size: 19px;
-     text-align: center;
-}
-
 #search .form .maps{
-     border-radius: 10px 0px 0px 10px;
-     background-color: #f2f2f2;
-     width: 20px;
-     border: 1px solid #f2f2f2;
+     background-color:#f2f2f2;
+     padding: 23px;
+     border-radius: 15px 0px 0px 15px;
 }
 
 #search .form .bar{
-     padding: 14px;
-     border: 1px solid #f2f2f2;
-     width: 210px;
-     font-size: 19px;
-     outline: none;
+     width: 64%;
+     border-top: #F2F2F2 1px solid;
+     border-bottom: #F2F2F2 1px solid;
+     border-left: none;
+     border-right: none;
 }
+
+#lieu::placeholder{
+     color: black;
+     font-weight: 600;
+     font-size: 15px;
+     font-family: 'Raleway';
+}
+
 
 #search .form .btn{
-     border-radius: 0px 10px 10px 0px;
      background-color: #0065fc;
-     color: white;
-     cursor: pointer;
-     width: 100px;
-     border: 1px solid #0065fc;
-}
-
-#search .fa-search{
-     display: none;
+     color: #ffffff;
+     text-align: center;
+     padding: 23px;
+     width: 20px;
+     border-radius: 0px 15px 15px 0px;
 }
 
 #search .search{
-     color: #ffffff;
+     display: none;
 }
 
 #search .filter{
@@ -160,19 +143,26 @@ color: #0065fc;
      border-right: 2px solid #d9d9d9;
      border-bottom: 2px solid #d9d9d9;
      border-radius: 50px;
-     height: 35px;
-     margin-right: 20px;
-     margin-top: 2px;  
-}
-
-
-      
-#search .filter .filter_1 .icone{
-     color: #0065fc;
-     background-color:#deebff;
-     padding: 10px;
+     height: 41px;
      margin-right: 10px;
-     border-radius: 50px;
+     margin-top: 10px; 
+}
+  
+  
+        
+  #search .filter .filter_1 .icone{
+     padding: 11px;
+     border-radius: 100px;
+     margin-right: 10px;
+     color: #0065fc;
+     background-color: #deebff;
+     margin-left: -2px;
+     margin-top: -2px;
+     margin-bottom: -2px;
+     border: 1px solid #deebff;
+     width: 18px;
+     text-align: center;
+     cursor: pointer;
 }
       
 #search .filter .filter_1 .description{
@@ -196,62 +186,118 @@ color: #0065fc;
 
 #accomodation{
      display: flex;
-     flex-direction: row;
-     justify-content: space-between;
+     flex-direction: column-reverse;
+}
+aside{
+     background-color: #f2f2f2;         
+}
+
+aside span{
+    display: flex;
+    align-items: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-right: 16px;
+    margin-top: 10px;
+}
+
+aside .products{
+     display: flex;
+}
+
+aside span .fas{
+     font-size: 25px;
+     margin-right: 25px;
+}
+
+aside .products .figure{
+     display: flex;
+     flex-direction: column;
+     background-color: #ffffff;
+     margin-bottom: 5%;
+     border-radius: 20px;
+     width: 90%;
+     height: 279px;
+}
+
+aside .products .figure .miniature {
+     display: flex;
+     justify-content: center;
+}
+
+aside .products .figure .miniature img{
+     display: flex;
+     align-items: center;    
+     height: 130px;
+     width: 99%;
+     border-radius: 20px 20px 0px 0px;
+     object-fit: cover;
+     padding: 4px;
+}
+
+aside .products .figure .figcaption{
+     display: flex;
+     flex-direction: column;
+     margin-left: 15px;
+}
+
+aside .products .figure .figcaption h3{
      
 }
 
-.product_sheet{
-     background-color: #f2f2f2;
-     width: 62%;
-     border-radius: 3%;
+aside .products .figure .figcaption p{
+   
 }
 
-.product_sheet .products{
+aside .products .figure .figcaption .stars{
+
+}
+
+
+#accomodation .product_sheet .products{
      display: flex;
      flex-direction: row;
      justify-content: space-evenly;
      flex-wrap: wrap;
 }
 
-.product_sheet .products .links{
-     width: 30%;
-     padding-bottom: 10px;
+#accomodation .product_sheet .products .links{
+     width: 45%;
+     padding-bottom: 15px;
 }
 
-.product_sheet .products .figure{
+#accomodation .product_sheet .products .figure{
      margin-bottom: 10px;
      border-radius: 20px;
      box-shadow: 0 0 20px #0000002e;
 
 }
 
-.product_sheet .products .figure .miniature{
+#accomodation .product_sheet .products .figure .miniature{
      display: flex;
      justify-content: center;
-     padding: 4px;
 }
 
-.product_sheet .products .figure .miniature img{
+#accomodation .product_sheet .products .figure .miniature img{
      height: 130px;
-     width: 100%;
+     width: 99%;
      border-radius: 20px 20px 0px 0px;
      object-fit: cover;
-               
+     padding: 2px;       
 }
 
-.product_sheet .products .figure .figcaption{
+#accomodation .product_sheet .products .figure .figcaption{
      padding-left: 10px;          
 }
 
-.product_sheet .products .figcaption .description h3{
+#accomodation .product_sheet .products .figcaption .description h3{
      margin-top: 0px;
      margin-right: 25px;
      margin-left: 5px;
      font-size: 16px
 }
 
-.product_sheet .products .figcaption .description p{
+#accomodation .product_sheet .products .figcaption .description p{
      margin-top: -15px;
      margin-right: 25px;
      margin-left: 5px;
@@ -259,145 +305,67 @@ color: #0065fc;
      margin-bottom: 3px;
 }
 
-.product_sheet .products .figcaption .stars{
+#accomodation .product_sheet .products .figcaption .stars{
      margin-top: 0px;
      margin-left: 5px;
-     padding-bottom: 10px;
 }
 
-aside{
-     background-color: #f2f2f2;
-     width: 35%;
-     border-radius: 3%;        
+.plus{
+     margin-left: 18px;
+     margin-top: 28px;
+     font-weight: 700;
 }
-
-aside h1 i{
-     margin-left: 170px;
-}
-
-aside .products .links{
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-}
-
-aside .figure{
-     display: flex;
-     align-items: center;
-     width: 80%;
-     background-color: #ffffff;
-     margin-bottom: 5%;
-     border-radius: 20px;
-     
-}
+  
 
 
-aside .products .figure .miniature img{
-     display: flex;
-     align-items: center;    
-     height: 130px;
-     width: 140px;
-     border-radius: 20px 0px 0px 20px;
-     object-fit: cover;
-     padding: 4px;
-}
-
-
-aside .products .figure .figcaption h3{
-     margin-top: 0px;
-     margin-right: 15px;
-     margin-left: 12px;
-     font-size: 19px;
-
-}
-
-aside .products .figure .figcaption p{
-     margin-top: -10px;
-    margin-right: 25px;
-    margin-left: 11px;
-    font-size: 17px;
-}
-
-aside .products .figure .figcaption .stars{
-     margin-top: 30px;
-     margin-right: 45px;
-     margin-left: 20px;
-     font-size: 20px;
-}
 
 /*ACTIVITY*/
 
-.locations_mobile{
+#activity .locations_desktop{
      display: none;
 }
 
-#activity{
-     margin-top: 30px;
-     }
-     
-     
-.locations_desktop{
-          display: flex;
-          justify-content: space-between;   
+#activity .locations_mobile{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
 }
 
-.location_2{
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between
+#activity .locations_mobile .location{
+     width: 45%;
 }
 
-.location_4{
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between
+
+
+
+#activity .figure{
+     margin-bottom: 25px;
+     border-radius: 20px;
+     box-shadow: 1px 1px 1px black;
+     box-shadow: 0 0 20px #0000002e;
+
 }
 
-.locations_desktop .figure_1{
-          border-radius: 20px;
-          box-shadow: 0 0 20px #0000002e;}
-.locations_desktop .figure_2{
-          border-radius: 20px;
-          box-shadow: 0 0 20px #0000002e;}
-.locations_desktop .figure_3{
-          border-radius: 20px;
-          box-shadow: 0 0 20px #0000002e;}
-.locations_desktop .figure_4{
-          border-radius: 20px;
-          box-shadow: 0 0 20px #0000002e;}
+#activity .pictures{
+     display: flex;
+     justify-content: center;
+              
+}
 
-.locations_desktop .figcaption p{
-          margin-left: 20px;
-          padding-bottom: 15px;
+#activity img{
+     height: 130px;
+     width: 100%;
+     border-radius: 20px 20px 0px 0px;
+     object-fit: cover;
+               
 }
-          /*figure_1*/
-.locations_desktop .figure_1 .pictures img{
-                    width: 320px;
-                    height: 380px;
-                    object-fit: cover;
-                    border-radius: 20px 20px 0px 0px;
-                    
-}
-          /*figure_2*/      
-.locations_desktop .figure_2 .pictures img{
-                    width: 320px;
-                    height: 175px;
-                    object-fit: cover;
-                    border-radius: 20px 20px 0px 0px;
-}
-          /*figure_3*/
-.locations_desktop .figure_3 .pictures img{
-                    width: 320px;
-                    height: 105px;
-                    object-fit: cover;
-                    border-radius: 20px 20px 0px 0px;
-}
-          /*figure_4*/
-.locations_desktop .figure_4 .pictures img{
-                    width: 320px;
-                    height: 135px;
-                    object-fit: cover;
-                    border-radius: 20px 20px 0px 0px;
+
+#activity .figcaption{
+     padding-left: 10px;
+     display: flex;
+     align-items: center;
+               
 }
 
 

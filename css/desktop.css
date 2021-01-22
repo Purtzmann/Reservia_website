@@ -3,8 +3,7 @@
 body {
      font-family: "Raleway";
      width: 1440px;
-     margin-right: 4%;
-     margin-left: 4%;
+     margin: auto;
 }
 
 
@@ -77,11 +76,17 @@ header nav li strong{
 color: #0065fc;
 }
 
+header nav li a{
+     padding-top: 42px;
+}
+
 
 header nav ul a:hover{
 border-top: 2px solid #0065fc;
 color: #0065fc;
 }
+
+
 
 /*SEARCH*/
 
@@ -99,6 +104,7 @@ color: #0065fc;
      display: flex;
      flex-direction: row;
      margin-top: 30px;
+     margin-bottom: 30px;
 }
 
 #search .maps, .btn{
@@ -108,7 +114,7 @@ color: #0065fc;
 }
 
 #search .form .maps{
-     border-radius: 10px 0px 0px 10px;
+     border-radius: 15px 0px 0px 15px;
      background-color: #f2f2f2;
      width: 20px;
      border: 1px solid #f2f2f2;
@@ -122,8 +128,16 @@ color: #0065fc;
      outline: none;
 }
 
+
+#lieu::placeholder{
+     color: black;
+     font-weight: 600;
+     font-size: 15px;
+     font-family: 'Raleway';
+}
+
 #search .form .btn{
-     border-radius: 0px 10px 10px 0px;
+     border-radius: 3px 15px 15px 3px;
      background-color: #0065fc;
      color: white;
      cursor: pointer;
@@ -142,12 +156,12 @@ color: #0065fc;
 #search .filter{
      display: flex;
      margin-top: 10px;
-     flex-direction: column;
 }
 
 #search .filter .title p{
      font-size: 20px;
      margin-left: 4px;
+     margin-right: 40px;
 }
 
 #search .filter .filter-btn{
@@ -164,20 +178,32 @@ color: #0065fc;
      border-right: 2px solid #d9d9d9;
      border-bottom: 2px solid #d9d9d9;
      border-radius: 50px;
-     height: 35px;
-     margin-right: 20px;
-     margin-top: 2px;  
-}
-
-
-      
-#search .filter .filter_1 .icone{
-     color: #0065fc;
-     background-color:#deebff;
-     padding: 10px;
+     height: 41px;
+     margin-right: 50px;
+     margin-top: 10px; 
+  }
+  
+  
+        
+  #search .filter .filter_1 .icone{
+     padding: 11px;
+     border-radius: 100px;
      margin-right: 10px;
-     border-radius: 50px;
-}
+     color: #0065fc;
+     background-color: #deebff;
+     margin-left: -2px;
+     margin-top: -2px;
+     margin-bottom: -2px;
+     border: 1px solid #deebff;
+     width: 18px;
+     text-align: center;
+     cursor: pointer;
+  }
+        
+  #search .filter .filter_1 .description{
+     padding-right: 13px;
+     font-weight: bold;
+  }
       
 #search .filter .filter_1 .description{
      padding-right: 15px;
@@ -209,6 +235,10 @@ color: #0065fc;
      background-color: #f2f2f2;
      width: 62%;
      border-radius: 3%;
+}
+
+.product_sheet h1{
+     margin-left: 25px;
 }
 
 .product_sheet .products{
@@ -269,6 +299,12 @@ color: #0065fc;
      padding-bottom: 10px;
 }
 
+.product_sheet .plus{
+     font-weight:700;
+     width: 758px;
+     margin-bottom: 36px;
+}
+
 aside{
      background-color: #f2f2f2;
      width: 35%;
@@ -280,6 +316,14 @@ aside span{
     flex-direction: row;
     align-items: baseline;
     justify-content: space-around;
+}
+
+aside span h1{
+     margin-left: -8px;
+}
+
+aside span .fas{
+     font-size: 20px;
 }
 
 aside .products .links{
@@ -340,7 +384,7 @@ aside .products .figure .figcaption .stars{
 
 #activity{
      margin-top: 30px;
-     }
+}
      
      
 .locations_desktop{
@@ -362,16 +406,30 @@ aside .products .figure .figcaption .stars{
 
 .locations_desktop .figure_1{
           border-radius: 20px;
-          box-shadow: 0 0 20px #0000002e;}
+          box-shadow: 0 0 20px #0000002e;
+          height: 445px;
+     }
 .locations_desktop .figure_2{
           border-radius: 20px;
-          box-shadow: 0 0 20px #0000002e;}
+          box-shadow: 0 0 20px #0000002e;
+          height: 236px;
+     }
 .locations_desktop .figure_3{
           border-radius: 20px;
-          box-shadow: 0 0 20px #0000002e;}
+          box-shadow: 0 0 20px #0000002e;
+          height: 164px;
+     }
 .locations_desktop .figure_4{
           border-radius: 20px;
-          box-shadow: 0 0 20px #0000002e;}
+          box-shadow: 0 0 20px #0000002e;
+          height:195px;
+     }
+
+.locations_desktop .figure_5{
+          border-radius: 20px;
+          box-shadow: 0 0 20px #0000002e;
+          height:209px;
+     }
 
 .locations_desktop .figcaption p{
           margin-left: 20px;
@@ -379,32 +437,39 @@ aside .products .figure .figcaption .stars{
 }
           /*figure_1*/
 .locations_desktop .figure_1 .pictures img{
-                    width: 320px;
-                    height: 380px;
-                    object-fit: cover;
-                    border-radius: 20px 20px 0px 0px;
+     width: 302px;
+     height: 389px;
+     object-fit: cover;
+     border-radius: 20px 20px 0px 0px;
                     
 }
           /*figure_2*/      
 .locations_desktop .figure_2 .pictures img{
-                    width: 320px;
-                    height: 175px;
-                    object-fit: cover;
-                    border-radius: 20px 20px 0px 0px;
+     width: 302px;
+     height: 180px;
+     object-fit: cover;
+     border-radius: 20px 20px 0px 0px;
 }
           /*figure_3*/
 .locations_desktop .figure_3 .pictures img{
-                    width: 320px;
-                    height: 105px;
-                    object-fit: cover;
-                    border-radius: 20px 20px 0px 0px;
+     width: 302px;
+     height: 109px;
+     object-fit: cover;
+     border-radius: 20px 20px 0px 0px;
 }
           /*figure_4*/
 .locations_desktop .figure_4 .pictures img{
-                    width: 320px;
-                    height: 135px;
-                    object-fit: cover;
-                    border-radius: 20px 20px 0px 0px;
+     width: 302px;
+     height: 140px;
+     object-fit: cover;
+     border-radius: 20px 20px 0px 0px;
+}
+
+.locations_desktop .figure_5 .pictures img{
+     width: 302px;
+     height: 153px;
+     object-fit: cover;
+     border-radius: 20px 20px 0px 0px;
 }
 
 

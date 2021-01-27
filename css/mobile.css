@@ -22,6 +22,11 @@ h1{
    font-size: 18px;
 }
 
+h2{
+   margin-left: 7px;
+   font-size: 18px;
+}
+
 
 
 /*HEADER*/
@@ -31,10 +36,6 @@ header{
    margin-top: -43px;
    margin-right: -8px;
    margin-bottom: -40px;
-}
-
-header .logo{
-   display: none;
 }
              
 
@@ -352,6 +353,7 @@ aside .products .figure .figcaption .stars{
 
 
 .plus{
+   min-width: 200px;
    margin-left: 18px;
    margin-top: 28px;
    font-weight: 700;

@@ -353,53 +353,109 @@ aside .products .figure .figcaption .stars{
 
 /*ACTIVITY*/
 
-#activity .locations_desktop{
-     display: none;
+#activity{
+     margin-top: 30px;
 }
-
-#activity .locations_mobile{
+  
+#activity .activity_marseille{
+     margin-bottom:60px;
+}
+     
+     
+.locations_desktop{
      display: flex;
-     flex-direction: row;
-     justify-content: space-evenly;
-     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: space-between;
 }
-
-#activity .locations_mobile .location{
-     width: 45%;
+  
+.location_1{
+     margin-left: 15px;
+     margin-right: 15px;
 }
-
-
-
-
-#activity .figure{
-     margin-bottom: 25px;
+  
+.location_2{
+     display: flex;
+     flex-direction: column;
+     margin-left: 15px;
+     margin-right: 15px;
+}
+  
+.location_4{
+     display: flex;
+     flex-direction: column;
+     margin-left: 15px;
+     margin-right: 15px;
+}
+  
+.locations_desktop .figure_1{
      border-radius: 20px;
-     box-shadow: 1px 1px 1px black;
      box-shadow: 0 0 20px #0000002e;
-
+     margin-bottom: 27px;
 }
-
-#activity .pictures{
-     display: flex;
-     justify-content: center;
-              
+.locations_desktop .figure_2{
+     border-radius: 20px;
+     box-shadow: 0 0 20px #0000002e;
+     margin-bottom: 27px;
 }
-
-#activity img{
-     height: 130px;
+.locations_desktop .figure_3{
+     border-radius: 20px;
+     box-shadow: 0 0 20px #0000002e;
+     margin-bottom: 27px;
+}
+.locations_desktop .figure_4{
+     border-radius: 20px;
+     box-shadow: 0 0 20px #0000002e;
+     margin-bottom: 27px;
+}
+  
+.locations_desktop .figure_5{
+     border-radius: 20px;
+     box-shadow: 0 0 20px #0000002e;
+     margin-bottom: 27px;
+}
+  
+.locations_desktop .figcaption p{
+          margin-left: 20px;
+          padding-bottom: 15px;
+}
+  
+          /*figure_1*/
+.locations_desktop .figure_1 .pictures img{
+     height: 150px;
      width: 100%;
      border-radius: 20px 20px 0px 0px;
      object-fit: cover;
-               
+                    
 }
-
-#activity .figcaption{
-     padding-left: 10px;
-     display: flex;
-     align-items: center;
-               
+          /*figure_2*/      
+.locations_desktop .figure_2 .pictures img{
+     height: 150px;
+     width: 100%;
+     border-radius: 20px 20px 0px 0px;
+     object-fit: cover;
 }
-
+          /*figure_3*/
+.locations_desktop .figure_3 .pictures img{
+     height: 150px;
+     width: 100%;
+     border-radius: 20px 20px 0px 0px;
+     object-fit: cover;
+}
+          /*figure_4*/
+.locations_desktop .figure_4 .pictures img{
+     height: 150px;
+     width: 100%;
+     border-radius: 20px 20px 0px 0px;
+     object-fit: cover;
+}
+  
+.locations_desktop .figure_5 .pictures img{
+     height: 150px;
+     width: 100%;
+     border-radius: 20px 20px 0px 0px;
+     object-fit: cover;
+}
+  
 
 /*FOOTER*/
 footer{

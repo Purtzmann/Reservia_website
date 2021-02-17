@@ -386,10 +386,6 @@ aside .products .figure .figcaption .stars{
 
 /*ACTIVITY*/
 
-.locations_mobile{
-     display: none;
-}
-
 #activity{
      margin-top: 30px;
 }
@@ -400,52 +396,52 @@ aside .products .figure .figcaption .stars{
      
      
 .locations_desktop{
-          display: flex;
-          justify-content: space-between;   
+     display: flex;
+     justify-content: space-between;   
 }
 
 .location_2{
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between
 }
 
 .location_4{
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between
 }
 
 .locations_desktop .figure_1{
-          border-radius: 20px;
-          box-shadow: 0 0 20px #0000002e;
-          height: 445px;
-     }
+     border-radius: 20px;
+     box-shadow: 0 0 20px #0000002e;
+     height: 445px;
+}
 .locations_desktop .figure_2{
-          border-radius: 20px;
-          box-shadow: 0 0 20px #0000002e;
-          height: 236px;
-     }
+     border-radius: 20px;
+     box-shadow: 0 0 20px #0000002e;
+     height: 236px;
+}
 .locations_desktop .figure_3{
-          border-radius: 20px;
-          box-shadow: 0 0 20px #0000002e;
-          height: 164px;
-     }
+     border-radius: 20px;
+     box-shadow: 0 0 20px #0000002e;
+     height: 164px;
+}
 .locations_desktop .figure_4{
-          border-radius: 20px;
-          box-shadow: 0 0 20px #0000002e;
-          height:195px;
-     }
+     border-radius: 20px;
+     box-shadow: 0 0 20px #0000002e;
+     height:195px;
+}
 
 .locations_desktop .figure_5{
-          border-radius: 20px;
-          box-shadow: 0 0 20px #0000002e;
-          height:209px;
-     }
+     border-radius: 20px;
+     box-shadow: 0 0 20px #0000002e;
+     height:209px;
+}
 
 .locations_desktop .figcaption p{
-          margin-left: 20px;
-          padding-bottom: 15px;
+     margin-left: 20px;
+     padding-bottom: 15px;
 }
           /*figure_1*/
 .locations_desktop .figure_1 .pictures img{

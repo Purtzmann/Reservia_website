@@ -125,6 +125,9 @@ color: #0065fc;
      border-right: none;
 }
 
+
+
+
 #lieu::placeholder{
      color: black;
      font-weight: 600;
@@ -174,6 +177,10 @@ color: #0065fc;
      height: 41px;
      margin-right: 10px;
      margin-top: 10px; 
+}
+
+#search .filter .filter_1:hover{
+     box-shadow: 0 0 10px #0000002e;
 }
   
   

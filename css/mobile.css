@@ -190,6 +190,10 @@ header li:last-child .links {
    margin-top: 10px; 
 }
 
+#search .filter .filter_1:hover{
+   box-shadow: 0 0 10px #0000002e;
+}
+
 
       
 #search .filter .filter_1 .icone{

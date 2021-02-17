@@ -185,7 +185,11 @@ color: #0065fc;
      height: 41px;
      margin-right: 50px;
      margin-top: 10px; 
-  }
+}
+
+#search .filter .filter_1:hover{
+     box-shadow: 0 0 10px #0000002e;
+}
   
   
         
@@ -202,12 +206,12 @@ color: #0065fc;
      width: 18px;
      text-align: center;
      cursor: pointer;
-  }
+}
         
   #search .filter .filter_1 .description{
      padding-right: 13px;
      font-weight: bold;
-  }
+}
       
 #search .filter .filter_1 .description{
      padding-right: 15px;

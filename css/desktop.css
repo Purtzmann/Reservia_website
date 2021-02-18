@@ -2,8 +2,7 @@
 
 body {
      font-family: "Raleway";
-     width: 1440px;
-     margin: auto;
+     margin: 0;
 }
 
 
@@ -33,7 +32,11 @@ h2{
 
 
 /*HEADER*/
-
+header{
+     max-width: 1440px;
+     margin: auto;
+     padding: 0 2rem;
+}
 
 nav img{
      width: 97px;
@@ -88,6 +91,14 @@ header nav li a{
 header nav ul .links:hover{
 border-top: 2px solid #0065fc;
 color: #0065fc;
+}
+
+/*MAIN*/
+
+main{
+     max-width: 1440px;
+     margin: auto;
+     padding: 0 2rem;
 }
 
 

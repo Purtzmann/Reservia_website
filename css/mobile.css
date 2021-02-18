@@ -72,7 +72,6 @@ header nav ul li:nth-child(2){
 
 header nav ul li:nth-child(2):hover{
    border-bottom: 3px solid #1e90ff;
-   color: #1e90ff;
 }
 
 header nav ul li:nth-child(3){
@@ -84,6 +83,9 @@ header nav ul li:nth-child(3){
 
 header nav ul li:nth-child(3):hover{
    border-bottom: 3px solid #1e90ff;
+}
+
+header nav ul .links:hover{
    color: #1e90ff;
 }
 
